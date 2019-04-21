@@ -1,0 +1,24 @@
+﻿.margin0 {
+    margin: 0;
+}
+
+@media screen and (max-width:767px) {
+    .header-top-left-info ul li {
+        margin: 5px;
+    }
+
+    .navigation {
+        text-align: center;
+    }
+
+        .navigation ul {
+            float: none;
+            margin-top: 15px;
+        }
+
+            .navigation ul li {
+                float: none;
+                margin: 10px;
+                display: inline-block;
+            }
+}

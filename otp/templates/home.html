@@ -1,0 +1,65 @@
+{% extends 'Main/index.html' %}
+{% block portfolio %}{% endblock %}
+{% block about %}{% endblock %}
+{% block services %}{% endblock %}
+{% block title %}SignUp{% endblock %}
+{% block blog %}{% endblock %}
+
+{% block content %}
+
+    <div class="container py-5" >
+
+
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Check Current User(Empty if not logged in)
+        </button>
+
+        <!-- Modal -->
+        <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLabel" aria-hidden="true">
+
+            <div class="modal-dialog" role="document">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h5 class="modal-title" id="myLabel">Currently Logged in User if empty then sign up...</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+
+                    </div>
+
+
+                    <div class="modal-body">
+
+                        <header class="jumbotron">
+                            <h2>Welcome User, {{ user.get_full_name }}
+                                <small>{{ user.username }}</small>
+                                !
+                            </h2>
+                            <p>Your email address: {{ user.email }}</p>
+                            {% if user.is_authenticated %}
+                                <h3><a href="/admin">Login</a><br></h3>
+                            {% endif %}
+                            {% if not user.is_authenticated %}
+                                <h3><a href="{% url 'signup' %}">signup</a></h3>
+                            {% endif %}
+
+
+                        </header>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Django default" uuid="7fc32ab6-e9b4-4fd7-aec6-20dff7732295">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>django</user-name>
+      <ssh-properties>
+        <enabled>false</enabled>
+        <proxy-host>68.183.84.187</proxy-host>
+        <user>django</user>
+        <use-password>false</use-password>
+        <auth-type>KEY_PAIR</auth-type>
+        <private-key-path>D:\.ssh\DigitalOcean.ppk</private-key-path>
+      </ssh-properties>
+      <ssl-config>
+        <ca-cert>D:\.ssh\www.implicit.me\cert.pem</ca-cert>
+        <client-cert>D:\.ssh\www.implicit.me\cert.pem</client-cert>
+        <client-key>D:\.ssh\www.implicit.me\fullchain.pem</client-key>
+        <enabled>false</enabled>
+      </ssl-config>
+    </data-source>
+  </component>
+</project>

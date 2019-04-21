@@ -1,0 +1,97 @@
+{% extends 'Main/index.html' %}
+{% load staticfiles %}
+{% block title %}Contact Page{% endblock %}
+{% block about %}{% endblock %}
+{% block portfolio %}{% endblock %}
+{% block services %}{% endblock %}
+{% block blog %}{% endblock %}
+{% block content %}
+
+    <section class="alldiv">
+        <div class="container">
+            <div class="section-1-body">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="contact-left">
+                        <div class="contact-left-header">
+                            <h2>GET IN TOUCH</h2><br/>
+                            <p>Our helpline is always open to receive any inquiry or feedback. Please feel free to drop
+                                us
+                                an email from the form below and we will get back to you as soon as we can.</p>
+                        </div>
+                        <div class="detail">
+                            <form method="post">
+                                <ul>
+                                    {% csrf_token %}
+                                    {#                                <div class="col-sm-4">#}
+                                    <li>
+
+                                        {% if messages %}
+                                            <ul class="messages">
+                                                {% for message in messages %}
+                                                    <li{% if message.tags %}
+                                                        class="{{ message.tags }}"{% endif %}>
+                                                        <p class="alert alert-danger">{{ message }}</p></li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                        {{ form.as_p }}
+                                        {#                                </div>#}
+                                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                        <div class="g-recaptcha"
+                                             data-sitekey="6LdyJ58UAAAAAMRlnftJeGJqucFpXC5Vjp7CEvR2"></div>
+                                        <br/>
+                                    </li>
+                                    <input style="width: 90px; height: 36px; font-size: medium" class="btn btn-success"
+                                           type="submit" value="Submit" name="submit">
+                                    {#                                <div class="read-more"><a href="#" title="Submit">Submit</a></div>#}
+                                </ul>
+                            </form>
+                        </div>
+                        {#                                <li><input name="" type="text" class="name-input" placeholder="Your Name" /></li>#}
+                        {#                                <li><input name="" type="text" class="name-input" placeholder="Your Email" /></li>#}
+                        {#                                <li><textarea name="" cols="" rows="5" class="massage-box" placeholder="Write comment here..."></textarea></li>#}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-5 col-xs-12 pull-right">
+            <div class="contact-right"><img style="margin-top: -530px; margin-left: -40px;"
+                                            src="{% static 'images/about.jpg' %}" alt="video-image"/></div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="col-md-5 col-sm-5 col-xs-12">
+            <div style="margin-left: 70px;" class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56036.65058166645!2d77.05550987390006!3d28.621049499968354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04ba6b064d0f%3A0xf609cdf712fe603e!2sJanakpuri%2C+New+Delhi%2C+Delhi!5e0!3m2!1sen!2sin!4v1555676875422!5m2!1sen!2sin"
+                        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-5 col-xs-12 pull-right">
+            <div class="contact-left">
+                <div style="margin-left: -40px; margin-top: 18px;" class="contact-left-header">
+                    <h2>GET IN TOUCH</h2><br/>
+                    <p>Our helpline is always open to receive any inquiry or feedback. Please feel free to drop us an
+                        email
+                        from the form below and we will get back to you as soon as we can.</p>
+                    <ul>
+                        <li>
+                            CtrlAltFix.com,<br/>
+                            New Delhi,India<br/>
+                            110019
+                        </li>
+                        <li>
+                            <strong>E-mail:</strong><a href="#"> CtrlAltFix@gmail.com </a><br/>
+                            <strong>Phone-No:</strong><a
+                                href="#">
+                            +91-9991771414 </a><br/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+{% endblock %}

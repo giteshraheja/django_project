@@ -1,0 +1,181 @@
+{% extends 'Main/index.html' %}
+{% load staticfiles %}
+{% block title %}Blog Page{% endblock %}
+{% block portfolio %}{% endblock %}
+{% block services %}{% endblock %}
+{% block blog %}{% endblock %}
+{% block content %}
+
+    <section class="alldiv">
+        <div class="container">
+            <div class="section-1-header">
+                <h2><a href="#" title="OUR TEAM">OUR TEAM</a></h2>
+                <p>We're a team of makers, thinkers, explorers and creators.
+                    We are serious about delivering great outcomes.</p>
+            </div>
+            <div class="section-1-body">
+                {#                <div class="col-md-3 col-sm-3 col-xs-12">#}
+                {#                    <div class="section-1-article">#}
+                {#                        <p><img src="{% static 'images/about/1.jpg' %}" alt="best-developer"/></p>#}
+                {#                        <p>#}
+                {#                            <strong>Martin Jones</strong><br/>#}
+                {#                            CEO#}
+                {#                        </p>#}
+                {#                    </div>#}
+                {#                </div>#}
+                <div class="col-md-4 col-sm-4 col-xs-12" style="padding-left: 111px;">
+                    <div class="section-1-article">
+                        <p><img src="{% static 'images/about/2.jpg' %}" alt="best-developer"/></p>
+                        <p>
+                            <strong>Mukul Juneja</strong><br/>
+                            Managing Director
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12" style="padding-left: 111px;">
+                    <div class="section-1-article">
+                        <p><img src="{% static 'images/about/3.jpg' %}" alt="best-developer"/></p>
+                        <p>
+                            <strong>Gitesh Raheja</strong><br/>
+                            Head of Development
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12" style="padding-left: 111px;">
+                    <div class="section-1-article">
+                        <p><img src="{% static 'images/about/4.jpg' %}" alt="best-developer"/></p>
+                        <p>
+                            <strong>Devesh</strong><br/>
+                            Design Director
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="alldiv" id="about-1">
+        <div class="container">
+            <div class="about-numbers">
+                <ul>
+                    <li class="col-md-3 col-sm-3 col-xs-12">
+                        <h4><i class="fa fa-code"></i></h4>
+                        <h3>23304</h3>
+                        <p>LINES OF CODING</p>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-12">
+                        <h4><i class="fa fa-clock-o"></i></h4>
+                        <h3>11304</h3>
+                        <p>CODING HOURS</p>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-12">
+                        <h4><i class="fa fa-thumbs-o-up"></i></h4>
+                        <h3>2304</h3>
+                        <p>COMPLETED PROJECTS</p>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-12">
+                        <h4><i class="fa fa-angellist"></i></h4>
+                        <h3>1579</h3>
+                        <p>PROJECTS WON</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="alldiv" id="about-2">
+        <div class="container">
+            <div class="about-body">
+
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="about-body-left"><img src="{% static 'images/about/faq_img.jpg' %}" alt="image"/></div>
+                </div>
+
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <div class="about-body-right">
+                        <h4>
+                            FREQUENTLY ASKED QUESTIONS.<br/>
+                            <br/>
+                            <span><img src="{% static 'images/Untitled-1.png' %}" alt="lines"/></span>
+                        </h4>
+                        {% for ques in question %}
+                            <div class="about-buttons">
+                                <div class="accordion">
+                                    <div class="abt-btn">{{ ques.question }}</div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="abt" style="margin: -10px;padding: 30px; font-size: small">{{ ques.answer }}
+                                </div>
+                            </div>
+
+                        {% endfor %}
+                            {#                        <div class="accordion">#}
+                            {#                            <div class="abt-btn">What We Do#}
+                            {#                            </div>#}
+                            {#                        </div>#}
+                            {#                        <div class="about-buttons">#}
+                            {#                            <div class="accordion">#}
+                            {##}
+                            {#                            </div>#}
+                            {#                        </div>#}
+                            {#                        <div class="accordion">#}
+                            {#                            <div class="abt" style="margin: -10px;padding: 30px; font-size: small">#}
+                            {#                            </div>#}
+                            {#                        </div>#}
+                            {#                    </div>#}
+                            {#                    <div class="accordion">#}
+                            {#                        <div class="abt-btn">#}
+                            {#                        </div>#}
+                            {#                    </div>#}
+                            {#                    <div class="accordion">#}
+                            {#                        <div class="abt" style="margin: -10px;padding: 30px; font-size: small">#}
+                            {#                            #}
+                            {#                        </div>#}
+                            {#                    </div>#}
+                            </div>
+                </div>
+            </div>
+
+
+            <div class="about-clints-bg">
+                <div class="flexslider">
+                    <div class="wrap">
+                        <ul class="slides">
+                            <li>
+                                <div class="about-clints">
+                                    <ul>
+                                        <li><a href="#"><img src="{% static 'images/client/negative.png' %}"
+                                                             alt="negativetopositive.com"/></a></li>
+                                        <li><a href="#"><img src="{% static 'images/client/manglam.png' %}"
+                                                             alt="manglam-florist"/></a></li>
+                                        <li><a href="#"><img
+                                                src="{% static 'images/client/electricle-vyapar.png' %}"
+                                                alt="electricle vyapar"/></a></li>
+                                        <li><a href="#"><img src="{% static 'images/client/myfloralkart.png' %}"
+                                                             alt="myfloralkart.com"/></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="about-clints">
+                                    <ul>
+                                        <li><a href="#"><img src="{% static 'images/client/negative.png' %}"
+                                                             alt="negativetopositive.com"/></a></li>
+                                        <li><a href="#"><img src="{% static 'images/client/manglam.png' %}"
+                                                             alt="manglam-florist"/></a></li>
+                                        <li><a href="#"><img
+                                                src="{% static 'images/client/electricle-vyapar.png' %}"
+                                                alt="electricle vyapar"/></a></li>
+                                        <li><a href="#"><img src="{% static 'images/client/myfloralkart.png' %}"
+                                                             alt="myfloralkart.com"/></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+{% endblock %}
