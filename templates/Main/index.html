@@ -3,6 +3,8 @@
 <head>
     {% load staticfiles %}
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
     <title>{% block title %}CtrlAltFix{% endblock %}</title>
     <link rel="icon" href="{% static 'Drop upload.png' %}" type="image/x-icon"/>
     <link rel="shortcut icon" href="{% static 'Drop upload.png' %}" type="image/x-icon"/>
@@ -12,7 +14,7 @@
     {% include 'Main/js.html' %}
 
 </head>
-<body>
+<body style="background-color: #122b40!important;">
 
 {% include 'Main/header.html' %}
 <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
@@ -21,7 +23,7 @@
         {% for Banner in Banners %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                 <img class="d-block w-100" src="{{ Banner.Image.url }}" alt="{{ forloop.counter }}slide"
-                     style="width:100%; height: 500px; padding-top: 50px;">
+                     style="width:100%; height: 500px; margin-top: 15px; padding-top: 50px;">
                 <div class="carousel-caption d-none d-md-block">
                     <h5></h5>
                 </div>
@@ -39,7 +41,7 @@
 </div>
 
 {% block about %}
-    <section class="alldiv">
+    <section class="alldiv" style="color: white;">
         <div class="container">
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <div class="section-left">
@@ -52,7 +54,7 @@
                     {% for about in Aboutus %}
                         <h2>ABOUT CtrlAltFix</h2>
                         <p><strong>{{ about.heading }}</strong></p>
-                        <p>{{ about.description }}</p><br>
+                        <p>{{ about.description|slice:":485" }}</p><br>
                         <div class="read-more"><a href="/About"></i>Read More</a></div>
                     {% endfor %}
                 </div>
@@ -62,10 +64,10 @@
 {% endblock %}
 
 {% block services %}
-    <section class="alldiv">
-        <div class="container">
+    <section class="alldiv" style="color: white;">
+        <div class="container" style="color: white;">
             <div class="section-1-header">
-                <h2><a href="/service" title="SERVICES">SERVICES</a></h2>
+                <h2><a style="color: white;" href="/service" title="SERVICES">SERVICES</a></h2>
                 <p>We deliver amazing websites, mobile apps and enterprise applications to Start-ups, Enterprises, ISVs
                     and
                     Digital Agencies. Our digital marketing solutions help clients reach newer heights..</p>
@@ -73,21 +75,22 @@
             <div class="section-1-body">
                 <div class="col-md-3 col-sm-3 col-xs-12">
                     <div class="section-1-article">
-                        <h2>Web Development</h2>
+                        <h2 style="color: white;">Web Development</h2>
+
                         <p><img src="{% static 'images/service/web-development.png' %}" alt="best-developer"/></p><br>
-                        <p>With an amazing team of developers and designers, we deliver state-of-the-art websites and
+                        <p style="color: white;">With an amazing team of developers and designers, we deliver state-of-the-art websites and
                             web
                             applications. We offer a complete range of web development solutions starting from basic
                             informational websites to large SaaS & Cloud applications.</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="col-md-3 col-sm-3 col-xs-12" >
                     <div class="section-1-article">
-                        <h2>Mobile Solutions</h2>
+                        <h2 style="color: white;">Mobile Solutions</h2>
                         <p><img src="{% static 'images/service/Mobile-App-Development.png' %}" alt="best-developer"/>
                         </p>
                         <br>
-                        <p style="margin-top: 9px;">The art of engaging a whole new segment of audiences is the virtue
+                        <p style="margin-top: 9px; color: white">The art of engaging a whole new segment of audiences is the virtue
                             of a
                             few. We, over the years
                             have mastered this art. Ranging from simple mobile apps and websites to enterprise mobility
@@ -96,9 +99,9 @@
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12">
                     <div class="section-1-article">
-                        <h2>Enterprise Solutions</h2>
+                        <h2 style="color: white;">Enterprise Solutions</h2>
                         <p><img src="{% static 'images/service/staffing-services.png' %}" alt="best-developer"/></p>
-                        <p style="margin-top: -13px"> In a world where Enterprises want to cut down needless expenses
+                        <p style="margin-top: -13px; color:white;"> In a world where Enterprises want to cut down needless expenses
                             and
                             increase business
                             productivity, we act as a perfect outsourcing partner. Starting from applications that
@@ -108,11 +111,11 @@
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12">
                     <div class="section-1-article">
-                        <h2>Digital Marketing</h2>
+                        <h2 style="color: white;">Digital Marketing</h2>
                         <p><img src="{% static 'images/service/digital_marketing_png_390981.png' %}"
                                 alt="best-developer"/>
                         </p>
-                        <p style="margin-top: 18px;">We help you gain enhanced visibility, better positioning, increased
+                        <p style="margin-top: 18px; color: white;">We help you gain enhanced visibility, better positioning, increased
                             customer engagement and
                             improved ROI. We turn passers-by into leads, traffic into conversions and click-throughs
                             into
@@ -142,8 +145,8 @@
     <section class="alldiv" id="portfolio" style="">
         <div class="container">
             <div class="section-1-header">
-                <h2><p href="" title="PORTFOLIO">PORTFOLIO</p></h2>
-                <p> Here at CtrlAltFix, we are set on providing you the best web services on the Central Coast
+                <h2 style="color: white;"><p href="" title="PORTFOLIO">PORTFOLIO</p></h2>
+                <p style="color: white;"> Here at CtrlAltFix, we are set on providing you the best web services on the Central Coast
                     No matter if you are after Digital Marketing, Search Engine Optimisation (SEO), Website Design and
                     Development or even IT Support, CtrlAltFix is your one stop shop for the best service in Delhi</p>
             </div>
@@ -161,7 +164,7 @@
                         <a href="#">
                             <img src="{% static 'images/portfolio/Rising.png' %}" alt="portfolio"/>
                             <div class="portfolio-dollor">
-                                <h2>Rising Pole</h2>
+                                <h2 style="color: white;">Rising Pole</h2>
                             </div>
                         </a>
                     </div>
@@ -171,7 +174,7 @@
                         <a href="http://mercuryadvisory.com/">
                             <img src="{% static 'images/portfolio/Mercury.png' %}" alt="service-image-2"/>
                             <div class="portfolio-dollor">
-                                <h2>Mercury Advisory</h2>
+                                <h2 style="color: white;">Mercury Advisory</h2>
                             </div>
                         </a>
                     </div>
@@ -248,7 +251,7 @@
     <section class="alldiv">
         <div class="container">
             <div class="section-1-header">
-                <h2><a href="/blog" title="SERVICES">BLOG</a></h2>
+                <h2 style="color: white;"><a style="color: white;" href="/blog" title="SERVICES">BLOG</a></h2>
             </div>
             <div class="section-1-body">
 
@@ -258,12 +261,12 @@
                     {% endif %}
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="section-1-article">
-                            <h2 style="height: 40px;">{{ Blog.title }}</h2>
+                            <h2 style="height: 40px; color: white;">{{ Blog.title|slice:"0:25" }}</h2>
                             <p><img src="{{ Blog.image.url }}" alt="best-developer" style="height: 128px;"/></p>
-                            <h3 style="height: 95px; padding-top: 5px"><a href="/blog ">
-                                {{ Blog.header }}</a>
+                            <h3 style="height: 95px; color: white; padding-top: 5px;"><a href="/blog " style="color: white;">
+                                {{ Blog.header|slice:"0:45" }}</a>
                             </h3>
-                            <p style="height: 300px;overflow-x:auto;white-space: pre-wrap">{{ Blog.summary }}</p>
+                            <p style="height: 250px; color: white; overflow-x:auto;white-space: pre-wrap">{{ Blog.summary|slice:"0:270" }}</p>
                         </div>
                     </div>
 
@@ -330,12 +333,12 @@
         index: 'https://landbot.io/u/H-162467-WJWGZ9JF8N9UP8QE/index.html',
     });
 </script>
-<script>
-    // Show a proactive message after 5 seconds
-    setTimeout(() => {
-        myLandbotLivechat.sendProactive("Hello there!");
-    }, 5000);
-</script>
+{#<script>#}
+{#    // Show a proactive message after 5 seconds#}
+{#    setTimeout(() => {#}
+{#        myLandbotLivechat.sendProactive("Hello there!");#}
+{#    }, 5000);#}
+{#</script>#}
 
 </body>
 </html>

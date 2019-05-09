@@ -11,14 +11,17 @@ from django.contrib.auth.models import User
 from django.core.mail import EmailMessage
 from About.models import Banner
 
+
 def home(request):
-    context={
-        'Banners' : Banner.objects.all(),
+    context = {
+        'Banners': Banner.objects.all(),
     }
     return render(request, 'home.html', context)
 
 
 def signup(request):
+    if request.user.is_authenticated():
+        return render(request, 'home.html')
     if request.method == 'POST':
         form = SignupForm(request.POST)
         if form.is_valid():
@@ -27,7 +30,7 @@ def signup(request):
             user.save()
             current_site = get_current_site(request)
             message = render_to_string('acc_active_email.html', {
-                'user':user, 'domain':current_site.domain,
+                'user': user, 'domain': current_site.domain,
                 'uid': urlsafe_base64_encode(force_bytes(user.pk)),
                 'token': account_activation_token.make_token(user),
             })
@@ -57,4 +60,3 @@ def activate(request, uidb64, token):
         return HttpResponse('Thank you for your email confirmation. Now you can login your account.')
     else:
         return HttpResponse('Activation link is invalid!')
-

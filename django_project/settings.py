@@ -115,7 +115,7 @@ USE_TZ = True
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # Allow Django from all hosts. This snippet is installed from
-# /var/lib/digitalocean/allow_hosts.py
+# /var/lib/digitalocean/allow_hosts.pwy
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
@@ -130,7 +130,7 @@ MEDIA_URL = '/media/'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'mukuljuneja20'
+EMAIL_HOST_USER = 'Ctrlaltfix07'
 EMAIL_HOST_PASSWORD = obj['EMAIL_HOST_PASSWORD']
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

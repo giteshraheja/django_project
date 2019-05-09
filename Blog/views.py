@@ -10,3 +10,4 @@ def Blog(request):
     }
 
     return render(request, 'Blog/blog.html', context)
+

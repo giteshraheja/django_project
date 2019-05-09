@@ -20,10 +20,9 @@ def contact(request):
     else:
         form = contact_forms.Contact_form(request.POST)
         if form.is_valid():
-
             subject = form.cleaned_data['Name']
             from_mail = form.cleaned_data['Email_Id']
-            message = form.cleaned_data['yourmessage']
+            message = from_mail + "\n" + form.cleaned_data['yourmessage'] + "\n" + subject
 
 
             recaptcha_response = request.POST.get('g-recaptcha-response')
@@ -40,7 +39,6 @@ def contact(request):
                     send_mail(subject, message, from_mail, ['mkljuneja18@gmail.com'])
                     messages.success(request, 'E-mail Sent successfully!')
                     form = contact_forms.Contact_form()
-
                 except BadHeaderError:
                     messages.error(request, 'Invalid header found.')
             else:
