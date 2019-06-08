@@ -29,6 +29,6 @@ urlpatterns = [
     url(r'^Contact/', include('Contact.urls')),
     url(r'^account/', include('otp.urls')),
 
-    url(r'^test/', home_views.running),
+    url(r'^changelog/', home_views.running),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

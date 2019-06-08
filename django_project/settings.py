@@ -11,6 +11,7 @@ import os
 import netifaces
 import json
 
+
 # Find out what the IP addresses are at run time
 # This is necessary because otherwise Gunicorn will reject the connections
 def ip_addresses():
@@ -136,3 +137,6 @@ EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 GOOGLE_RECAPTCHA_SECRET_KEY = obj["SECRET_KEY"]
+
+STRIPE_SECRET_KEY = obj["STRIPE_SECRET_KEY"]
+STRIPE_PUBLISHABLE_KEY = obj["STRIPE_PUBLISHABLE_KEY"]

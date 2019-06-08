@@ -89,30 +89,17 @@
 </head>
 <body>
 <div class="box" style="color:#FFFFFF;">
-    <form method="post" style="">
-        {% csrf_token %}
-        {% for field in form %}
-            <p>
-                {% if forloop.counter == 1 %}
-                    <h2>Sign Up</h2>
-                {% endif %}
-
-            {#            {{ field.label_tag }}#}
-            {{ field }}
-
-            {% if field.help_text %}
-                <small style="display: none">{{ field.help_text }}</small>
-            {% endif %}
-            {% for error in field.errors %}
-                <p style="color: red">{{ error }}</p>
-            {% endfor %}
-            </p>
-        {% endfor %}
-
-        <input type="submit" value=Register style="color: #FFFFFF;">
-    </form>
-
-
+    <!-- templates/home.html -->
+<h2>Buy our support for ₹300</h2>
+<form action="{% url 'charge' %}" method="post">
+  {% csrf_token %}
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="{{ key }}"
+          data-description="Stripe Payment GateWay!"
+          data-amount="0"
+          data-panel-label="Pay ₹300"
+          data-locale="auto"></script>
+</form>
 </div>
 </body>
 </html>

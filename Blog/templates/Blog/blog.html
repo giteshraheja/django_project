@@ -11,22 +11,23 @@
     <section class="alldiv">
         <div class="container">
             <div class="section-1-header">
-                <h2 style="color: white;"><a style="color: white;" href="/blog" title="SERVICES">BLOG</a></h2>
+{#                <h2 style="color: white;"><a style="color: white;" href="/blog" title="SERVICES">BLOG</a></h2>#}
             </div>
-            <div class="section-1-body">
+            <div class="section-1-body container">
 
                 {% for Blog in Blogs %}
                     {% if forloop.counter > 4 %}
 
                     {% endif %}
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="section-1-article">
-                            <h2 style="height: 40px; color: white;">{{ Blog.title }}</h2>
-                            <p><img src="{{ Blog.image.url }}" alt="best-developer" style="height: 128px;"/></p>
-                            <h3 style="height: 95px; color: white; padding-top: 5px;"><a href="/blog " style="color: white;">
-                                {{ Blog.header }}</a>
-                            </h3>
-                            <p style="height: 300px; color: white; overflow-x:auto;white-space: pre-wrap">{{ Blog.summary }}</p>
+                    <div class="col-xs-12 ">
+                        <div class="section-1-article flex-container" style="">
+                            <h1 class="quote-left" style="color: white; text-align: center">{{ Blog.title }}</h1><br>
+                            <p><img src="{{ Blog.image.url }}" alt="best-developer" style="height: fit-content; width: fit-content"/></p>
+                            <h2 style="color: white; padding-top: 5px;"><h2 href="/blog " style="color: white;">
+                                {{ Blog.header }}</h2>
+                            </h2>
+                            <h3><p style="color: white; overflow-x:auto;white-space: pre-wrap">{{ Blog.summary }}</p></h3>
+                            <br>
                         </div>
                     </div>
 

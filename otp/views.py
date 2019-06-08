@@ -11,6 +11,14 @@ from django.contrib.auth.models import User
 from django.core.mail import EmailMessage
 from About.models import Banner
 
+import stripe  # new
+
+from django.conf import settings
+from django.views.generic.base import TemplateView
+from django.shortcuts import render  # new
+
+stripe.api_key = settings.STRIPE_SECRET_KEY  # new
+
 
 def home(request):
     context = {
@@ -59,4 +67,26 @@ def activate(request, uidb64, token):
         login(request, user)
         return HttpResponse('Thank you for your email confirmation. Now you can login your account.')
     else:
-        return HttpResponse('Activation link is invalid!')
+        return HttpResponse('Activation link is invalid! Please contact page admin')
+
+
+# payments/views.py
+
+
+class HomePageView(TemplateView):
+    template_name = 'stripe.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(HomePageView, self).get_context_data(**kwargs)
+        context['key'] = settings.STRIPE_PUBLISHABLE_KEY
+        return context
+
+def charge(request):  # new
+    if request.method == 'POST':
+        charge = stripe.Charge.create(
+            amount=30000,
+            currency='inr',
+            description='Stripe Payment GateWay!',
+            source=request.POST['stripeToken'],
+        )
+        return render(request, 'charge.html')
