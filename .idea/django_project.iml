@@ -16,7 +16,7 @@
     <content url="file://$MODULE_DIR$">
       <excludePattern pattern="*desktop.ini" />
     </content>
-    <orderEntry type="jdk" jdkName="Dj1.11_Py3.6 (DjEnv)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="P3.6D1.1" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
