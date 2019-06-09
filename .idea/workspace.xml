@@ -2,59 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7123fdc-407b-4f83-9169-97547094d6ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/About/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/About/migrations/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/About/templates/About/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/About/templates/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog/migrations/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog/templates/Blog/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog/templates/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contact/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contact/migrations/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contact/templates/Contact/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contact/templates/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service/migrations/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service/templates/Service/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service/templates/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/media/Banner_image/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/media/blog/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/media/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/admin/css/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/admin/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/admin/fonts/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/admin/img/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/admin/img/gis/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/admin/js/admin/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/admin/js/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/admin/js/vendor/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/admin/js/vendor/jquery/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/admin/js/vendor/xregexp/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/css/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/images/about/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/images/client/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/images/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/images/portfolio/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/images/service/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/images/slider/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/js/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_project/static/maincss/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/Banner_image/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/blog/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/otp/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/otp/migrations/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/otp/templates/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Main/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/desktop.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,24 +50,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="124">
+              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirments.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Service/desktop.ini">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -209,8 +151,8 @@
         <option value="$PROJECT_DIR$/Blog/templates/Blog/blog.html" />
         <option value="$PROJECT_DIR$/templates/Main/changelog.html" />
         <option value="$PROJECT_DIR$/templates/Main/header.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/requirments.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -232,16 +174,6 @@
               <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_project" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -262,7 +194,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -370,7 +302,7 @@
       <workItem from="1559810666240" duration="4003000" />
       <workItem from="1559904159315" duration="5659000" />
       <workItem from="1559997674193" duration="242000" />
-      <workItem from="1560070477928" duration="806000" />
+      <workItem from="1560070477928" duration="1950000" />
     </task>
     <task id="LOCAL-00001" summary="added more few files with upadated UI. like signup etc.. to name a few!! :-D">
       <created>1557433571653</created>
@@ -386,16 +318,23 @@
       <option name="project" value="LOCAL" />
       <updated>1559997915570</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Requirements.txt">
+      <created>1560071422228</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560071422228</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105974000" />
+    <option name="totallyTimeSpent" value="107118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.19591528" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.19591528" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.48940998" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -407,9 +346,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
-      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.20130932" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.20130932" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.34697217" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34697217" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32405892" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3289689" />
       <window_info anchor="bottom" id="manage.py@django_project" order="14" weight="0.3289689" />
@@ -424,10 +363,37 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added more few files with upadated UI. like signup etc.. to name a few!! :-D" />
     <MESSAGE value="Added payment and other stuffs view changelog." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added payment and other stuffs view changelog." />
+    <MESSAGE value="Added Requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Requirements.txt" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/django_project/config.json">
@@ -655,8 +621,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="124">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Service/desktop.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -666,9 +639,6 @@
           <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Service/desktop.ini">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
