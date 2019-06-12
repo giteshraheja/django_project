@@ -1,7 +1,8 @@
 certifi==2019.3.9
 chardet==3.0.4
-Django==1.11.20
+Django==1.11.21
 djangorestframework==3.9.3
+gunicorn==19.9.0
 idna==2.8
 netifaces==0.10.9
 Pillow==6.0.0
