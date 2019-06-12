@@ -36,7 +36,7 @@ def contact(request):
 
             if result['success']:
                 try:
-                    send_mail(subject, message, from_mail, ['mkljuneja18@gmail.com'])
+                    send_mail(subject, message, from_mail, ['ctrlaltfix07@gmail.com'])
                     messages.success(request, 'E-mail Sent successfully!')
                     form = contact_forms.Contact_form()
                 except BadHeaderError:

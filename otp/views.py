@@ -81,6 +81,7 @@ class HomePageView(TemplateView):
         context['key'] = settings.STRIPE_PUBLISHABLE_KEY
         return context
 
+
 def charge(request):  # new
     if request.method == 'POST':
         charge = stripe.Charge.create(
