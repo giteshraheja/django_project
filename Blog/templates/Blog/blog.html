@@ -1,0 +1,41 @@
+{% extends 'Main/index.html' %}
+{% load staticfiles %}
+{% block title %}Blog Page{% endblock %}
+{% block about %}{% endblock %}
+{% block portfolio %}{% endblock %}
+{% block services %}{% endblock %}
+{% block content %}
+{% endblock %}
+
+{% block blog %}
+    <section class="alldiv">
+        <div class="container">
+            <div class="section-1-header">
+{#                <h2 style="color: white;"><a style="color: white;" href="/blog" title="SERVICES">BLOG</a></h2>#}
+            </div>
+            <div class="section-1-body container">
+
+                {% for Blog in Blogs %}
+                    {% if forloop.counter > 4 %}
+
+                    {% endif %}
+                    <div class="col-xs-12 ">
+                        <div class="section-1-article flex-container" style="">
+                            <h1 class="quote-left" style="color: white; text-align: center">{{ Blog.title }}</h1><br>
+                            <p><img src="{{ Blog.image.url }}" alt="best-developer" style="height: fit-content; width: fit-content"/></p>
+                            <h2 style="color: white; padding-top: 5px;"><h2 href="/blog " style="color: white;">
+                                {{ Blog.header }}</h2>
+                            </h2>
+                            <h3><p style="color: white; overflow-x:auto;white-space: pre-wrap">{{ Blog.summary }}</p></h3>
+                            <br>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

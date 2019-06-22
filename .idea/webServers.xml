@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b69a5937-c19f-4426-85d6-01ddbacf1db6" name="Digital" url="http://68.183.84.187">
+        <fileTransfer host="68.183.84.187" port="22" privateKey="C:\Users\Gitesh\.ssh\DigitalOcean.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
